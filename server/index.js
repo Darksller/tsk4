@@ -7,9 +7,10 @@ import 'dotenv/config'
 const app = express()
 
 const corsOptions = {
-	origin: 'https://tsk4-server.vercel.app/',
+	origin: 'https://tsk4.vercel.app/',
 }
 
+app.use(cors(corsOptions))
 app.use(express.json())
 
 async function login(req, res) {
