@@ -4,9 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"type": "module",
+	"engines": {
+		"node": "21.x"
+	},
 	"scripts": {
-		"start": "node index",
-		"build": "npm run build"
+		"start": "node index.js"
 	},
 	"author": "darksller",
 	"license": "ISC",
