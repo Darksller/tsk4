@@ -65,6 +65,7 @@ async function signup(req, res) {
 
 		return res.status(200).json({ token: jwtToken })
 	} catch (err) {
+		console.log(err)
 		return res.status(400).json({ message: err })
 	}
 }
