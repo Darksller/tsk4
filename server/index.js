@@ -8,8 +8,9 @@ const app = express()
 
 const corsOptions = {
 	origin: 'https://tsk4.vercel.app/',
+	credentials: true,
 }
-
+app.use(header)
 app.use(cors(corsOptions))
 app.use(express.json())
 
