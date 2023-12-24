@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const userApi = createApi({
 	reducerPath: 'userApi',
 	tagTypes: ['Users'],
-	baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/' }),
+	baseQuery: fetchBaseQuery({ baseUrl: 'https://tsk4-server.vercel.app/' }),
 	endpoints: build => ({
 		getUsers: build.query({
 			query: () => '/getUsers',

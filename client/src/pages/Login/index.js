@@ -39,13 +39,10 @@ export default function Login() {
 			})
 		} catch (err) {
 			if (err instanceof Error) {
-				// This block handles general errors
 				setError('An error occurred: ' + err.message)
 			} else if (err.data && err.data.message) {
-				// This block handles errors with a data property containing a message (assumes server error)
 				setError(err.data.message)
 			} else {
-				// This block handles other types of errors
 				setError('An unexpected error occurred.')
 			}
 		}
