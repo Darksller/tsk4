@@ -10,7 +10,6 @@ const corsOptions = {
 	origin: 'https://tsk4.vercel.app',
 }
 
-app.use(header)
 app.use(cors(corsOptions))
 app.use(express.json())
 
