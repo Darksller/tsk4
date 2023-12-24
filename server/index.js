@@ -10,7 +10,6 @@ const corsOptions = {
 	origin: 'https://tsk4-server.vercel.app/',
 }
 
-app.use(cors(corsOptions))
 app.use(express.json())
 
 async function login(req, res) {
